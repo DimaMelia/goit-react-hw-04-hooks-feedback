@@ -1,0 +1,7 @@
+.controlBtn :nth-last-child() {
+    margin-right: 0px;
+}
+
+.controlBtn {
+    margin-right: 10px;
+}
