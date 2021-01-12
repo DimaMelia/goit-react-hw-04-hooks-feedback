@@ -1,15 +1,15 @@
-import propTypes from "prop-types";
-import s from "./Controls.module.css";
+import propTypes from 'prop-types';
+import s from './Controls.module.css';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <div className="controls">
-      {options.map((option) => (
+      {options.map(option => (
         <button
           type="button"
           className={s.controlBtn}
-          value={option.toLowerCase()}
-          key={option.toLowerCase()}
+          name={option}
+          key={option}
           onClick={onLeaveFeedback}
         >
           {option}
